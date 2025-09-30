@@ -1,0 +1,11 @@
+[package]
+name = "jna-direct-mapping-android"
+version = "0.1.0"
+edition = "2024"
+
+[profile.release]
+lto = true
+
+[lib]
+crate-type = ["cdylib"]
+path = "src/main/rust/lib.rs"

@@ -1,0 +1,21 @@
+[versions]
+agp = "8.8.2"
+kotlin = "2.1.20"
+junit = "4.13.2"
+androidx-junit = "1.3.0"
+espresso-core = "3.7.0"
+appcompat = "1.7.1"
+gobley = "0.3.5"
+jna = "5.18.0"
+
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-junit" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+jna = { group = "net.java.dev.jna", name = "jna", version.ref = "jna" }
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+gobley-cargo = { id = "dev.gobley.cargo", version.ref = "gobley" }
